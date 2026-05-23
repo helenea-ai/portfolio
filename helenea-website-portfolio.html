@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helenea Garcia — Brand & Marketing Specialist</title>
+<meta name="description" content="Remote Brand & Marketing Specialist · Brand assets, email campaigns, social media & CRM · Available US/AU/UK hours">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1C1917;
+  --ink2:#2a211e;
+  --rose:#C4717A;
+  --rose-light:rgba(196,113,122,0.12);
+  --rose-mid:#e8b4b8;
+  --cream:#FAF7F2;
+  --sage:#7A9E7E;
+  --warm:#8A847C;
+  --border:#E8E2D9;
+  --white:#FFFFFF;
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(28,25,23,0.95);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(232,226,217,0.08);
+  height:72px;
+  display:flex;align-items:center;
+  padding:0 6vw;
+  justify-content:space-between;
+}
+
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-mono{
+  width:38px;height:38px;
+  background:var(--rose);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;font-weight:700;color:#fff;
+  flex-shrink:0;
+}
+.nav-name{font-size:.88rem;font-weight:500;color:#fff;letter-spacing:.01em}
+
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{
+  font-size:.8rem;color:var(--warm);
+  text-decoration:none;letter-spacing:.04em;
+  transition:color .2s;
+}
+.nav-links a:hover{color:var(--rose)}
+
+.nav-pill{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(196,113,122,.12);
+  border:1px solid rgba(196,113,122,.3);
+  border-radius:99px;
+  padding:8px 18px;
+  font-size:.75rem;font-weight:600;
+  color:var(--rose);letter-spacing:.04em;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:all .2s;
+}
+.nav-pill:hover{background:var(--rose);color:#fff}
+.pulse{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--sage);
+  animation:pulse 2s infinite;
+  flex-shrink:0;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-toggle span{width:22px;height:2px;background:var(--warm);border-radius:2px;transition:all .3s}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:var(--ink);
+  display:flex;align-items:center;
+  padding:120px 6vw 80px;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero-orb1{
+  position:absolute;top:-100px;right:-100px;
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,113,122,.08),transparent 65%);
+  pointer-events:none;
+}
+.hero-orb2{
+  position:absolute;bottom:-150px;left:-100px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(122,158,126,.06),transparent 65%);
+  pointer-events:none;
+}
+.hero-line{
+  position:absolute;left:0;bottom:0;right:0;
+  height:1px;background:linear-gradient(90deg,transparent,rgba(196,113,122,.3),transparent);
+}
+
+.hero-inner{
+  display:grid;grid-template-columns:1fr auto;
+  gap:80px;align-items:center;width:100%;max-width:1400px;margin:0 auto;
+  position:relative;z-index:1;
+}
+
+.hero-label{
+  font-size:.68rem;font-weight:700;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--rose);
+  margin-bottom:22px;
+}
+
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(4rem,8vw,7rem);
+  font-weight:700;color:#fff;
+  line-height:.92;
+  margin-bottom:28px;
+}
+.hero-title em{font-style:italic;color:var(--rose)}
+
+.hero-sub{
+  font-size:1rem;font-weight:300;color:var(--warm);
+  line-height:1.8;max-width:560px;
+  margin-bottom:44px;
+}
+
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--rose);color:#fff;
+  padding:16px 32px;border-radius:99px;
+  font-size:.88rem;font-weight:600;letter-spacing:.02em;
+  text-decoration:none;border:none;cursor:pointer;
+  transition:all .25s;
+  box-shadow:0 8px 32px rgba(196,113,122,.35);
+}
+.btn-primary:hover{background:#b5656e;transform:translateY(-2px);box-shadow:0 12px 40px rgba(196,113,122,.45)}
+
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  background:transparent;color:var(--warm);
+  padding:16px 32px;border-radius:99px;
+  font-size:.88rem;font-weight:400;letter-spacing:.02em;
+  text-decoration:none;border:1.5px solid rgba(138,132,124,.35);
+  transition:all .25s;
+}
+.btn-ghost:hover{border-color:var(--rose);color:var(--rose)}
+
+.hero-stats{
+  display:flex;flex-direction:column;gap:0;
+  border-left:1px solid rgba(232,226,217,.1);
+  padding-left:60px;
+}
+.stat-item{
+  padding:28px 0;
+  border-bottom:1px solid rgba(232,226,217,.08);
+}
+.stat-item:last-child{border-bottom:none}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem;font-weight:700;color:var(--rose);
+  line-height:1;margin-bottom:6px;
+}
+.stat-label{
+  font-size:.68rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(255,255,255,.4);
+}
+
+.scroll-hint{
+  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  opacity:.4;
+}
+.scroll-hint span{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.scroll-line{width:1px;height:50px;background:linear-gradient(var(--rose),transparent)}
+
+/* ── ABOUT ── */
+.about{
+  display:grid;grid-template-columns:1fr 1fr;
+  min-height:600px;
+}
+
+.about-dark{
+  background:var(--ink);
+  padding:80px 6vw 80px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+
+.about-label{
+  font-size:.65rem;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--rose);margin-bottom:20px;
+}
+.about-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.4rem,2.5vw,2rem);
+  font-style:italic;color:#fff;
+  line-height:1.45;margin-bottom:24px;
+}
+.about-line{width:60px;height:2px;background:var(--rose);margin-bottom:24px;opacity:.6}
+.about-text{font-size:.9rem;color:var(--warm);line-height:1.85}
+
+.about-cream{
+  background:var(--cream);
+  padding:80px 5vw 80px;
+  display:flex;flex-direction:column;justify-content:center;
+  gap:16px;
+}
+
+.value-card{
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:14px;padding:22px 24px;
+  display:flex;align-items:flex-start;gap:16px;
+  transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.value-card:hover{border-color:var(--rose);transform:translateX(6px);box-shadow:4px 0 20px rgba(196,113,122,.1)}
+.value-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
+.value-title{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:5px}
+.value-text{font-size:.82rem;color:var(--warm);line-height:1.6}
+
+/* ── EXPERIENCE ── */
+.experience{
+  background:#fff;
+  padding:100px 6vw;
+}
+
+.section-label{
+  font-size:.65rem;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--rose);margin-bottom:10px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4rem);
+  font-weight:700;color:var(--ink);
+  line-height:1.1;margin-bottom:8px;
+}
+.section-sub{font-size:.9rem;color:var(--warm);line-height:1.7;margin-bottom:60px}
+
+.timeline{
+  position:relative;
+  max-width:900px;margin:0 auto;
+}
+
+.timeline::before{
+  content:'';
+  position:absolute;left:50%;transform:translateX(-50%);
+  top:0;bottom:0;width:2px;
+  background:linear-gradient(var(--border),var(--border) 80%,transparent);
+}
+
+.t-entry{
+  display:grid;grid-template-columns:1fr 60px 1fr;
+  gap:0;margin-bottom:40px;align-items:start;
+}
+
+.t-entry:nth-child(odd) .t-card{grid-column:3}
+.t-entry:nth-child(odd) .t-empty{grid-column:1}
+.t-entry:nth-child(even) .t-card{grid-column:1}
+.t-entry:nth-child(even) .t-empty{grid-column:3}
+
+.t-dot-wrap{
+  grid-column:2;
+  display:flex;justify-content:center;
+  padding-top:22px;
+  position:relative;z-index:1;
+}
+.t-dot{
+  width:16px;height:16px;border-radius:50%;
+  background:var(--rose);border:3px solid #fff;
+  box-shadow:0 0 0 2px var(--rose);
+}
+
+.t-card{
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:16px;padding:26px 28px;
+  box-shadow:0 2px 16px rgba(0,0,0,.04);
+  transition:box-shadow .2s,transform .2s;
+}
+.t-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+
+.t-entry:nth-child(odd) .t-card{margin-left:20px}
+.t-entry:nth-child(even) .t-card{margin-right:20px}
+
+.t-date{
+  display:inline-flex;
+  background:var(--rose-light);border-radius:99px;
+  padding:4px 12px;font-size:.72rem;font-weight:600;
+  color:var(--rose);letter-spacing:.04em;
+  margin-bottom:12px;
+}
+.t-role{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-weight:700;color:var(--ink);
+  margin-bottom:4px;line-height:1.2;
+}
+.t-company{font-size:.8rem;color:var(--warm);margin-bottom:14px;font-weight:500}
+.t-bullets{list-style:none;display:flex;flex-direction:column;gap:7px}
+.t-bullets li{
+  font-size:.82rem;color:#4a4442;line-height:1.6;
+  padding-left:16px;position:relative;
+}
+.t-bullets li::before{content:'·';position:absolute;left:0;color:var(--rose);font-weight:700;font-size:1rem}
+
+.t-empty{display:block}
+
+/* ── COMPETENCIES ── */
+.competencies{
+  background:var(--ink);
+  padding:100px 6vw;
+}
+
+.competencies .section-title{color:#fff}
+.competencies .section-sub{margin-bottom:56px}
+
+.comp-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;max-width:1200px;margin:0 auto;
+}
+
+.comp-card{
+  background:rgba(250,247,242,.04);
+  border:1px solid rgba(232,226,217,.12);
+  border-radius:16px;padding:32px;
+  transition:background .25s,border-color .25s,transform .25s;
+}
+.comp-card:hover{
+  background:rgba(196,113,122,.06);
+  border-color:rgba(196,113,122,.3);
+  transform:translateY(-4px);
+}
+.comp-icon{font-size:1.8rem;margin-bottom:18px;display:block}
+.comp-title{
+  font-size:1rem;font-weight:600;color:#fff;
+  margin-bottom:10px;
+}
+.comp-rose-line{width:36px;height:2px;background:var(--rose);margin-bottom:14px;opacity:.6}
+.comp-text{font-size:.82rem;color:var(--warm);line-height:1.7}
+
+/* ── WORK SAMPLES ── */
+.samples{
+  background:var(--cream);
+  padding:100px 6vw;
+}
+
+.samples-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:24px;max-width:1100px;margin:0 auto;
+}
+
+.sample-card{
+  background:#fff;border:1.5px solid var(--border);
+  border-radius:20px;padding:36px;
+  transition:box-shadow .25s,transform .25s,border-color .25s;
+  cursor:default;
+}
+.sample-card:hover{
+  box-shadow:0 12px 48px rgba(0,0,0,.08);
+  transform:translateY(-4px);
+  border-color:var(--rose-mid);
+}
+
+.sample-num-pill{
+  display:inline-flex;
+  background:var(--rose-light);
+  border:1px solid rgba(196,113,122,.25);
+  border-radius:99px;padding:4px 14px;
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--rose);
+  margin-bottom:18px;
+}
+.sample-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.5rem;font-weight:700;color:var(--ink);
+  margin-bottom:6px;line-height:1.2;
+}
+.sample-type{
+  font-size:.75rem;color:var(--warm);letter-spacing:.06em;
+  margin-bottom:16px;padding-bottom:16px;
+  border-bottom:1px solid var(--border);
+}
+.sample-desc{font-size:.85rem;color:#5a534f;line-height:1.7;margin-bottom:20px}
+
+.sample-thought{
+  background:var(--cream);border-radius:10px;
+  padding:14px 16px;
+  border-left:3px solid var(--rose);
+}
+.sample-thought-label{
+  font-size:.65rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--rose);margin-bottom:6px;
+}
+.sample-thought-text{font-size:.8rem;color:var(--warm);line-height:1.65;font-style:italic}
+
+/* ── TOOLS ── */
+.tools{
+  background:#fff;
+  padding:100px 6vw;
+}
+
+.tools-inner{max-width:900px;margin:0 auto}
+
+.tool-row{
+  display:flex;align-items:flex-start;gap:20px;
+  padding:20px 0;border-bottom:1px solid var(--border);
+}
+.tool-row:last-child{border-bottom:none}
+.tool-cat{
+  font-size:.65rem;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--rose);
+  min-width:180px;padding-top:4px;flex-shrink:0;
+}
+.tool-chips{display:flex;flex-wrap:wrap;gap:8px}
+.tool-chip{
+  background:var(--cream);border:1.5px solid var(--border);
+  border-radius:99px;padding:7px 18px;
+  font-size:.8rem;font-weight:500;color:var(--ink);
+  transition:border-color .2s,color .2s;
+}
+.tool-chip:hover{border-color:var(--rose);color:var(--rose)}
+
+/* ── CONTACT ── */
+.contact{
+  background:var(--ink);
+  padding:120px 6vw 80px;
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+
+.contact-orb{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,113,122,.07),transparent 65%);
+  pointer-events:none;
+}
+
+.contact-label{
+  font-size:.65rem;font-weight:700;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--rose);
+  margin-bottom:18px;position:relative;z-index:1;
+}
+.contact-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3.5rem,7vw,6rem);
+  font-weight:700;color:#fff;line-height:.95;
+  margin-bottom:30px;position:relative;z-index:1;
+}
+.contact-title em{font-style:italic;color:var(--rose)}
+
+.contact-sub{
+  font-size:.9rem;color:var(--warm);
+  margin-bottom:44px;position:relative;z-index:1;
+}
+
+.contact-divider{
+  width:100px;height:1.5px;
+  background:rgba(196,113,122,.4);
+  margin:0 auto 40px;position:relative;z-index:1;
+}
+
+.contact-details{
+  display:flex;flex-direction:column;gap:10px;
+  margin-bottom:44px;position:relative;z-index:1;
+}
+.contact-details a{
+  font-size:1rem;color:#fff;text-decoration:none;
+  transition:color .2s;letter-spacing:.02em;
+}
+.contact-details a:hover{color:var(--rose)}
+
+.contact-btns{
+  display:flex;justify-content:center;gap:14px;
+  flex-wrap:wrap;position:relative;z-index:1;
+}
+
+.footer-strip{
+  border-top:1px solid rgba(232,226,217,.06);
+  margin-top:80px;padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;
+  position:relative;z-index:1;flex-wrap:wrap;gap:10px;
+}
+.footer-strip p{font-size:.75rem;color:rgba(138,132,124,.5);letter-spacing:.04em}
+
+/* ── MOBILE NAV ── */
+.mobile-nav{
+  display:none;
+  position:fixed;top:72px;left:0;right:0;z-index:999;
+  background:rgba(28,25,23,.98);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(232,226,217,.08);
+  padding:24px 6vw 32px;
+  flex-direction:column;gap:20px;
+}
+.mobile-nav.open{display:flex}
+.mobile-nav a{
+  font-size:1rem;color:var(--warm);text-decoration:none;
+  padding:10px 0;border-bottom:1px solid rgba(232,226,217,.06);
+  transition:color .2s;
+}
+.mobile-nav a:hover{color:var(--rose)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{
+  opacity:0;transform:translateY(32px);
+  transition:opacity .65s ease,transform .65s ease;
+}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .hero-stats{
+    flex-direction:row;flex-wrap:wrap;gap:0;
+    border-left:none;border-top:1px solid rgba(232,226,217,.1);
+    padding-left:0;padding-top:32px;
+  }
+  .stat-item{
+    padding:20px 32px 20px 0;
+    border-bottom:none;border-right:1px solid rgba(232,226,217,.08);
+  }
+  .stat-item:last-child{border-right:none}
+
+  .about{grid-template-columns:1fr}
+  .about-dark,.about-cream{padding:60px 6vw}
+
+  .timeline::before{left:24px}
+  .t-entry{grid-template-columns:48px 1fr;grid-template-rows:auto}
+  .t-dot-wrap{grid-column:1;grid-row:1;padding-top:18px;justify-content:center}
+  .t-entry:nth-child(odd) .t-card,
+  .t-entry:nth-child(even) .t-card{grid-column:2;grid-row:1;margin:0}
+  .t-entry:nth-child(odd) .t-empty,
+  .t-entry:nth-child(even) .t-empty{display:none}
+
+  .comp-grid{grid-template-columns:1fr 1fr}
+  .samples-grid{grid-template-columns:1fr}
+
+  .nav-links,.nav-pill{display:none}
+  .nav-toggle{display:flex}
+
+  .footer-strip{flex-direction:column;text-align:center}
+
+  .tool-row{flex-direction:column;gap:10px}
+  .tool-cat{min-width:auto}
+}
+
+@media(max-width:600px){
+  .comp-grid{grid-template-columns:1fr}
+  .hero-stats{flex-direction:column}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(232,226,217,.08);padding:16px 0}
+  .contact-btns{flex-direction:column;align-items:center}
+  .hero-btns{flex-direction:column}
+  .btn-primary,.btn-ghost{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-mono">HG</div>
+    <span class="nav-name">Ma. Helenea Garcia</span>
+  </div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#samples">Work Samples</a>
+    <a href="#tools">Tools</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-pill">
+    <span class="pulse"></span>
+    Available for Work
+  </a>
+  <div class="nav-toggle" onclick="toggleNav()" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="toggleNav()">About</a>
+  <a href="#experience" onclick="toggleNav()">Experience</a>
+  <a href="#samples" onclick="toggleNav()">Work Samples</a>
+  <a href="#tools" onclick="toggleNav()">Tools</a>
+  <a href="#contact" onclick="toggleNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-line"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-label">Brand & Marketing Specialist · Cavite, Philippines</p>
+      <h1 class="hero-title">
+        Ma. Helenea<br>
+        E. <em>Garcia</em>
+      </h1>
+      <p class="hero-sub">
+        Detail-oriented Brand & Marketing Specialist with 3+ years of experience in brand asset creation, email campaigns, social media management, and CRM operations — all delivered independently across US, AU, and UK clients.
+      </p>
+      <div class="hero-btns">
+        <a href="#samples" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Industries Supported</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Assets Created</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Global Time Zones</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-dark reveal">
+    <p class="about-label">About Me</p>
+    <blockquote class="about-quote">
+      "I notice inconsistencies and fix them without being asked. That's not a job description — it's just how I'm wired."
+    </blockquote>
+    <div class="about-line"></div>
+    <p class="about-text">
+      Detail-oriented Brand & Marketing Specialist with a background spanning customer communications, QA, brand content, and CRM operations across US, AU, and UK clients.<br><br>
+      A hands-on mum, a person of faith, and someone who volunteered teaching street children to read and write in her spare time. I bring that same care and intentionality to every brand I work with.
+    </p>
+  </div>
+  <div class="about-cream reveal">
+    <div class="value-card">
+      <span class="value-icon">🎯</span>
+      <div>
+        <div class="value-title">Detail-Oriented by Nature</div>
+        <div class="value-text">Promoted to Quality Assurance at two separate companies for catching what others miss — without being asked.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <span class="value-icon">🌏</span>
+      <div>
+        <div class="value-title">Global Remote Experience</div>
+        <div class="value-text">US, AU, and UK timezone clients — reliable, responsive, and professional across all of them.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <span class="value-icon">💛</span>
+      <div>
+        <div class="value-title">Mission-Driven</div>
+        <div class="value-text">Volunteered teaching underprivileged children to read and write. Work means more when it matters.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <span class="value-icon">⚡</span>
+      <div>
+        <div class="value-title">Self-Directed & Reliable</div>
+        <div class="value-text">Delivers without being chased. Manages multiple responsibilities and projects independently, every time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="reveal">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Where I've been.</h2>
+    <p class="section-sub">A career built on communication, quality, and trust.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="t-entry reveal">
+      <div class="t-empty"></div>
+      <div class="t-dot-wrap"><div class="t-dot"></div></div>
+      <div class="t-card">
+        <span class="t-date">Apr 2024 – Present</span>
+        <div class="t-role">Quality Assurance / Admin Staff</div>
+        <div class="t-company">Weblio Philippines, Inc.</div>
+        <ul class="t-bullets">
+          <li>Scheduled and coordinated 20+ instructors daily — bookings, reminders, and real-time adjustments</li>
+          <li>Maintained CRM records and prepared reports with strong attention to detail</li>
+          <li>Built internal checklists and templates that improved team-wide brand consistency</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="t-entry reveal">
+      <div class="t-card">
+        <span class="t-date">Oct 2023 – Feb 2024</span>
+        <div class="t-role">General VA & Social Media VA</div>
+        <div class="t-company">Inspired Filipino Freelancer</div>
+        <ul class="t-bullets">
+          <li>Managed client email inboxes and social media scheduling using Canva and Mailchimp</li>
+          <li>Researched and maintained CRM records for 100+ contacts with high accuracy</li>
+          <li>Created on-brand content calendars and email campaigns independently</li>
+        </ul>
+      </div>
+      <div class="t-dot-wrap"><div class="t-dot"></div></div>
+      <div class="t-empty"></div>
+    </div>
+
+    <div class="t-entry reveal">
+      <div class="t-empty"></div>
+      <div class="t-dot-wrap"><div class="t-dot"></div></div>
+      <div class="t-card">
+        <span class="t-date">Mar 2022 – Dec 2023</span>
+        <div class="t-role">QA Staff & Customer Service Representative</div>
+        <div class="t-company">BM Outsourcing — HotelPlanner.com</div>
+        <ul class="t-bullets">
+          <li>Handled 50+ daily client interactions via phone and email — promoted to QA within 3 months</li>
+          <li>Monitored communications for brand tone, quality, and policy adherence</li>
+          <li>Coached agents on professional communication standards and CRM accuracy</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="t-entry reveal">
+      <div class="t-card">
+        <span class="t-date">Nov 2019 – Apr 2020</span>
+        <div class="t-role">Survey Caller / Client Support</div>
+        <div class="t-company">Datagen Facilities OPC</div>
+        <ul class="t-bullets">
+          <li>Conducted outbound calls to AU/NZ clients — professional call handling and data recording</li>
+          <li>Represented multiple client brands with confidentiality and consistent brand voice</li>
+        </ul>
+      </div>
+      <div class="t-dot-wrap"><div class="t-dot"></div></div>
+      <div class="t-empty"></div>
+    </div>
+
+    <div class="t-entry reveal">
+      <div class="t-empty"></div>
+      <div class="t-dot-wrap"><div class="t-dot"></div></div>
+      <div class="t-card">
+        <span class="t-date">Dec 2020 – Feb 2021</span>
+        <div class="t-role">Customer Sales & Support Representative</div>
+        <div class="t-company">1800Flowers.com</div>
+        <ul class="t-bullets">
+          <li>Handled customer communications via phone and email — orders, issues, and supplier coordination</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPETENCIES -->
+<section class="competencies" id="competencies">
+  <div class="reveal" style="text-align:center;margin-bottom:56px">
+    <p class="section-label">Core Competencies</p>
+    <h2 class="section-title">What I bring to your team.</h2>
+  </div>
+
+  <div class="comp-grid">
+    <div class="comp-card reveal">
+      <span class="comp-icon">🎨</span>
+      <div class="comp-title">Brand Asset Creation</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">Branded social graphics, email headers, presentation templates, and marketing collateral — all in Canva, all on-brand, every time.</p>
+    </div>
+    <div class="comp-card reveal">
+      <span class="comp-icon">📧</span>
+      <div class="comp-title">Email Campaigns</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">End-to-end email marketing — from copy and design to list management and delivery via HubSpot and Mailchimp.</p>
+    </div>
+    <div class="comp-card reveal">
+      <span class="comp-icon">📱</span>
+      <div class="comp-title">Social Media Management</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">Content scheduling, community engagement, DM and comment replies — maintaining brand voice across every interaction.</p>
+    </div>
+    <div class="comp-card reveal">
+      <span class="comp-icon">🗂</span>
+      <div class="comp-title">CRM & Asset Organisation</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">HubSpot CRM management, Google Drive asset libraries, and campaign tracking that keeps everything findable and current.</p>
+    </div>
+    <div class="comp-card reveal">
+      <span class="comp-icon">📅</span>
+      <div class="comp-title">Webinar Coordination</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">Full lifecycle event planning from registration page and promo graphics to post-event CRM tagging and performance reporting.</p>
+    </div>
+    <div class="comp-card reveal">
+      <span class="comp-icon">✅</span>
+      <div class="comp-title">Admin & Operations</div>
+      <div class="comp-rose-line"></div>
+      <p class="comp-text">Calendar management, inbox support, scheduling, and reporting that frees your team to focus on the work that matters most.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK SAMPLES -->
+<section class="samples" id="samples">
+  <div class="reveal">
+    <p class="section-label">Work Samples</p>
+    <h2 class="section-title">Realistic examples of my work.</h2>
+    <p class="section-sub">Each sample includes my thought process — not just the output.</p>
+  </div>
+
+  <div class="samples-grid">
+
+    <div class="sample-card reveal">
+      <span class="sample-num-pill">Sample 01</span>
+      <div class="sample-title">Re-engagement Email Campaign</div>
+      <div class="sample-type">Email Marketing · HubSpot / Mailchimp · Canva</div>
+      <p class="sample-desc">Warm, brand-voice newsletter designed to bring back lapsed customers without pressure. Structured around a single clear CTA and empathetic copy.</p>
+      <div class="sample-thought">
+        <div class="sample-thought-label">My Thought Process</div>
+        <div class="sample-thought-text">"The goal was to feel like a friend reaching out — not a brand chasing a sale. Warm subject line → empathetic opening → single CTA. No competing links."</div>
+      </div>
+    </div>
+
+    <div class="sample-card reveal">
+      <span class="sample-num-pill">Sample 02</span>
+      <div class="sample-title">Social Media Community Management</div>
+      <div class="sample-type">Instagram / LinkedIn · DMs & Comment Replies</div>
+      <p class="sample-desc">DM and comment replies across product FAQs, complaints, and general enquiries — all in consistent brand voice with warmth and efficiency.</p>
+      <div class="sample-thought">
+        <div class="sample-thought-label">My Thought Process</div>
+        <div class="sample-thought-text">"Every reply is a brand touchpoint. For complaints: empathy before solution — always. For FAQs: educational and conversational, not a spec sheet."</div>
+      </div>
+    </div>
+
+    <div class="sample-card reveal">
+      <span class="sample-num-pill">Sample 03</span>
+      <div class="sample-title">Brand Guidelines Document</div>
+      <div class="sample-type">Brand Consistency · Colour, Type, Voice & Logo Usage</div>
+      <p class="sample-desc">A complete brand system — colour palette with hex codes, typography pairings, brand voice Do/Don't, and logo usage rules — structured for team adoption.</p>
+      <div class="sample-thought">
+        <div class="sample-thought-label">My Thought Process</div>
+        <div class="sample-thought-text">"How do I make sure everyone always gets it right without asking? I made every rule copy-paste ready — small friction reduction → big consistency gains."</div>
+      </div>
+    </div>
+
+    <div class="sample-card reveal">
+      <span class="sample-num-pill">Sample 04</span>
+      <div class="sample-title">Webinar Coordination Plan</div>
+      <div class="sample-type">Event Planning · Campaign Execution · Post-Event Follow-Up</div>
+      <p class="sample-desc">Full 3-phase plan covering pre-event setup, day-of live execution, and post-event CRM tagging, LinkedIn recap, and performance reporting.</p>
+      <div class="sample-thought">
+        <div class="sample-thought-label">My Thought Process</div>
+        <div class="sample-thought-text">"A webinar is a campaign, not a calendar invite. The post-event phase is where pipeline value lives — so I made it as detailed as the pre-event phase."</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools" id="tools">
+  <div class="reveal">
+    <p class="section-label">Tech Stack</p>
+    <h2 class="section-title">Tools I use every day.</h2>
+    <p class="section-sub" style="margin-bottom:48px">Familiar with everything this role needs — and a fast learner on anything new.</p>
+  </div>
+
+  <div class="tools-inner">
+    <div class="tool-row reveal">
+      <div class="tool-cat">Design & Brand</div>
+      <div class="tool-chips">
+        <span class="tool-chip">Canva</span>
+        <span class="tool-chip">Grammarly</span>
+        <span class="tool-chip">CapCut</span>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <div class="tool-cat">CRM & Marketing</div>
+      <div class="tool-chips">
+        <span class="tool-chip">HubSpot CRM</span>
+        <span class="tool-chip">Mailchimp</span>
+        <span class="tool-chip">Zapier</span>
+        <span class="tool-chip">ChatGPT</span>
+        <span class="tool-chip">Gemini AI</span>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <div class="tool-cat">Productivity</div>
+      <div class="tool-chips">
+        <span class="tool-chip">Google Workspace</span>
+        <span class="tool-chip">Microsoft 365</span>
+        <span class="tool-chip">Google Sheets</span>
+        <span class="tool-chip">Google Drive</span>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <div class="tool-cat">Project Management</div>
+      <div class="tool-chips">
+        <span class="tool-chip">Trello</span>
+        <span class="tool-chip">Asana</span>
+        <span class="tool-chip">ClickUp</span>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <div class="tool-cat">Communication</div>
+      <div class="tool-chips">
+        <span class="tool-chip">Slack</span>
+        <span class="tool-chip">Zoom</span>
+        <span class="tool-chip">Google Meet</span>
+        <span class="tool-chip">Loom</span>
+        <span class="tool-chip">Calendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-orb"></div>
+
+  <p class="contact-label reveal">Let's Work Together</p>
+  <h2 class="contact-title reveal">
+    Ready when<br>
+    <em>you are.</em>
+  </h2>
+  <p class="contact-sub reveal">Full-time remote · Available across US / AU / UK hours · References on request</p>
+
+  <div class="contact-divider reveal"></div>
+
+  <div class="contact-details reveal">
+    <a href="mailto:esphelenea@gmail.com">esphelenea@gmail.com</a>
+    <a href="tel:+639812022003">+63 981 202 2003</a>
+    <a href="https://linkedin.com/in/ma-helenea-garcia-b30a952b2" target="_blank">linkedin.com/in/ma-helenea-garcia-b30a952b2</a>
+  </div>
+
+  <div class="contact-btns reveal">
+    <a href="mailto:esphelenea@gmail.com" class="btn-primary">Send Me a Message →</a>
+    <a href="#" class="btn-ghost">Download Resume</a>
+  </div>
+
+  <div class="footer-strip">
+    <p>© 2025 Ma. Helenea E. Garcia · All rights reserved</p>
+    <p>Brand & Marketing Specialist · Cavite, Philippines</p>
+  </div>
+</section>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(r => observer.observe(r));
+
+// Mobile nav
+function toggleNav(){
+  const nav = document.getElementById('mobileNav');
+  const toggle = document.getElementById('navToggle');
+  nav.classList.toggle('open');
+  const isOpen = nav.classList.contains('open');
+  const spans = toggle.querySelectorAll('span');
+  if(isOpen){
+    spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+  } else {
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '';
+    spans[2].style.transform = '';
+  }
+}
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if(window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--rose)' : '';
+  });
+});
+</script>
+</body>
+</html>
